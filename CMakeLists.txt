@@ -15,6 +15,7 @@ add_executable(unit_tests catch.hpp unit_tests.cpp
   test_sparse_vector.cpp sparse_vector.hpp sparse_vector.tpp
   linalg.hpp linalg.tpp test_linalg.cpp)
 
+
 # enable testing
 enable_testing()
 

@@ -1,10 +1,10 @@
 #ifndef ABSTRACT_VECTOR_HPP
 #define ABSTRACT_VECTOR_HPP
 
-// for std::size_t
-#include <cstddef>
+#include <cstddef> // for std::size_t
+using std::size_t;
 
-template<typename T>
+template<class T>
 class AbstractVector{
 public:
 
