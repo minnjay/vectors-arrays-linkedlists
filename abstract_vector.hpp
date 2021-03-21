@@ -4,7 +4,7 @@
 #include <cstddef> // for std::size_t
 using std::size_t;
 
-template<class T>
+template<typename T>
 class AbstractVector{
 public:
 

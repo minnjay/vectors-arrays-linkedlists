@@ -39,7 +39,7 @@ bool DenseVector<ItemType>::remove_back()
 template<class ItemType>
 bool DenseVector<ItemType>::add(const ItemType object, const size_t position)
 {
-	if (position<1 || position>itemCount + 1)
+	if (position < 1 || position > itemCount + 1)
 	{
 		return false;
 	}
@@ -49,7 +49,7 @@ bool DenseVector<ItemType>::add(const ItemType object, const size_t position)
 		{
 			maxSize += 2;
 			ItemType *tempptr = new ItemType[maxSize];
-			for (int a = 0; a < itemCount; ++a)
+			for (size_t a = 0; a < itemCount; ++a)
 			{
 				tempptr[a] = arrptr[a];
 			}
@@ -60,7 +60,7 @@ bool DenseVector<ItemType>::add(const ItemType object, const size_t position)
 
 		if (position != itemCount + 1)
 		{
-			for (int i = itemCount; i >= position; --i)
+			for (size_t i = itemCount; i >= position; --i)
 			{
 				arrptr[i] = arrptr[i - 1];
 			}
@@ -82,7 +82,7 @@ bool DenseVector<ItemType>::remove(const size_t position)
 	{
 		if (position != itemCount)
 		{
-			for (int i = position; i<itemCount; ++i)
+			for (size_t i = position; i<itemCount; ++i)
 			{
 				arrptr[i - 1] = arrptr[i];
 			}
@@ -165,7 +165,6 @@ DenseVector<ItemType>& DenseVector<ItemType>::operator=(const DenseVector<ItemTy
 		}
 	}
 	return *this;
-
 }
 
 template<class ItemType>

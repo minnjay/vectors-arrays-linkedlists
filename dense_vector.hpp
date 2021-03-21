@@ -1,3 +1,10 @@
+////////////////////////////////////////////////////////
+// Minn-Jay Chok
+//File Name: dense_vector.hpp
+//Description: This is a hpp file for dense vector
+//Date: 3/17/2021
+///////////////////////////////////////////////
+
 #ifndef DENSE_VECTOR_HPP
 #define DENSE_VECTOR_HPP
 
@@ -7,7 +14,7 @@
 #include <string>
 
 // TODO
-template<class ItemType>
+template<typename ItemType>
 class DenseVector : public AbstractVector<ItemType>
 {
 private:
